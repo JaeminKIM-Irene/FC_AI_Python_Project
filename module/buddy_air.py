@@ -1,7 +1,7 @@
 import requests
 import json
 
-from voice_text import speak
+from module.voice_text import speak
 from dotenv import load_dotenv
 import os
 

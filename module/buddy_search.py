@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
 
-from voice_text import speak
+from module.voice_text import speak
 
 def search(keyword) :
     speak("검색중입니다")

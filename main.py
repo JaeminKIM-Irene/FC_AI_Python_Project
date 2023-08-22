@@ -1,9 +1,9 @@
-from buddy_search import search
-from buddy_weather import weather
-from buddy_air import air
-from buddy_game import word_game
+from module.buddy_search import search
+from module.buddy_weather import weather
+from module.buddy_air import air
+from module.buddy_game import word_game
 import speech_recognition as sr
-from voice_text import speak
+from module.voice_text import speak
 import re
 
 r = sr.Recognizer()
