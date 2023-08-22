@@ -1,6 +1,6 @@
 <div align=center>
 
-<img src="https://capsule-render.vercel.app/api?type=Rounded&color=0:a18cd1,100:fbc2eb&height=120&section=header&text=FC%20AI%20PYTHON%20PROJECT&fontSize=70&" />
+<img src="https://capsule-render.vercel.app/api?type=Rounded&color=0:a18cd1,100:fbc2eb&height=120&section=header&text=FC%20AI%20PYTHON%20PROJECT&fontSize=55&" />
 
 </br></br>**FC AI 부트캠프 Python Project**</br></br>
 </br></br>**음성인식 비서 만들기**</br></br>
