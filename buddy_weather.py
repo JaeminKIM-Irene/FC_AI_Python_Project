@@ -2,9 +2,12 @@ import requests
 import json
 import googlemaps
 from voice_text import speak
+from dotenv import load_dotenv
+import os
 
 def get_location (name) :
-    gmaps = googlemaps.Client(key='AIzaSyBt7mfOS_H4hXIGE6N3fX8PR48IR5Rddog')
+    load_dotenv()
+    gmaps = googlemaps.Client(key=os.environ.get('GOOGLE_KEY'))
     try : 
         geocode_result = gmaps.geocode((name), language='ko')[0].get('geometry')
         lat = geocode_result['location']['lat']

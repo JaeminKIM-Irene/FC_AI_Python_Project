@@ -5,11 +5,14 @@ import re
 
 import speech_recognition as sr
 from voice_text import speak
+from dotenv import load_dotenv
+import os
 
 def comp_search(letter) :
+    load_dotenv()
     word_list = []
     params = {
-        'key': '9EEB85230FA3889F1026BDCF9E0FC50C',
+        'key': os.environ.get('KOR_KEY'),
         'q': letter,
         'req_type': 'json',
         'start': 1,

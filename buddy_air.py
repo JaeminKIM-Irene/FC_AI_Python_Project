@@ -2,6 +2,8 @@ import requests
 import json
 
 from voice_text import speak
+from dotenv import load_dotenv
+import os
 
 # 미세먼지 수치와 등급이 제대로 들어와있는지 확인
 def valid_data(data) :
@@ -14,10 +16,11 @@ def valid_data(data) :
         return 0, "", -1, -1
 
 def air(city, station) :
+    load_dotenv()
     if city[-1] == '시' or city[-1] == '도' :
         city = city[:-1]
     params = {
-        'serviceKey': 'NcSjYDL8Z8bRfg2LLFwJ9ahuq+/Z7jiJAYhRBJgcouK2hjWLOF9ehGQTyv+8sywZZJuZrWsjdUJ+wN7+7fKLHw==',
+        'serviceKey': os.environ.get('AIR_KEY'),
         'returnType': 'json',
         'numOfRows': '100',
         'pageNo': '1',
